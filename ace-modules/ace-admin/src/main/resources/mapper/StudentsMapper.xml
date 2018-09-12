@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.github.wxiaoqi.security.admin.mapper.StudentsMapper">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.github.wxiaoqi.security.admin.entity.Students" id="studentsMap">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="bithday" column="bithday"/>
+        <result property="address" column="address"/>
+        <result property="age" column="age"/>
+        <result property="sex" column="sex"/>
+        <result property="studentType" column="student_type"/>
+        <result property="studentDescription" column="student_description"/>
+        <result property="updTime" column="upd_time"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createUser" column="create_user"/>
+        <result property="updUser" column="upd_user"/>
+        <result property="parentPhone" column="parent_phone"/>
+        <result property="parentName" column="parent_name"/>
+        <result property="remainingCourses" column="remaining_courses"/>
+        <result property="courses" column="courses"/>
+    </resultMap>
+
+</mapper>
