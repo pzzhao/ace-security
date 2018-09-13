@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/ag_zipkin?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    url: jdbc:mysql://${MYSQL_HOST:192.168.100.100}:${MYSQL_PORT:3306}/ag_zipkin?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=false
     username: root
-    password: 123456
+    password: pz1234
     driver-class-name: com.mysql.jdbc.Driver
     continue-on-error: true
   application:
@@ -18,10 +18,10 @@ zipkin:
     type: mysql
   collector:
     rabbitmq:
-      addresses: ${RABBIT_MQ_HOST:127.0.0.1}
+      addresses: ${RABBIT_MQ_HOST:192.168.100.100}
       port: ${RABBIT_MQ_PORT:5672}
-      password: guest
-      username: guest
+      password: pzzhao
+      username: pzzhao
       queue: zipkin
 server:
   port: 9411
